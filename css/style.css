@@ -1,0 +1,387 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* Navbar */
+.navbar-container {
+  width: 100%;
+  background-color: #eb6213;
+  padding: 0 2rem;
+  height: 80px;
+}
+nav {
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  margin-top: 15px;
+}
+
+.navbar-itens {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  margin: 0;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-itens li {
+  display: inline-block;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-itens a {
+  text-decoration: none;
+  color: #333;
+  transition: 0, 5s;
+}
+
+.navbar-itens a:hover {
+  color: #fdfdfd;
+}
+
+.default-btn {
+  background: #fdfdfd;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.navbar-itens .default-btn:hover {
+  background-color: #eee;
+  color: #eb8213;
+}
+
+/* main-banner */
+.main-banner {
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0;
+}
+
+.main-banner p {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #fff 3px 2px 3px;
+  margin: -100px 0;
+}
+
+.main-banner p {
+  font-size: 36px;
+}
+
+/* Serviços */
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+  color: #21bcee;
+}
+
+.fa-rocket {
+  color: #eb6213;
+}
+
+.fa-comments {
+  color: #21c698;
+}
+
+.services-container h3 {
+  margin-bottom: 15px;
+}
+
+.services-container p {
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+
+/* Plans and Prices */
+.pricing-container {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 36px;
+}
+
+.pricing-container p {
+  font-size: 18px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 50px 0 auto;
+}
+
+.plans {
+  flex: 2;
+  max-width: 275px;
+  margin: 0 40px;
+}
+
+.plans li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  color: #e8e9ea;
+  color: #333;
+}
+
+.plans .price {
+  width: 120px;
+  height: 120px;
+  border-radius: 50px;
+  background-color: #eb6213;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto -50px;
+  line-height: 120px;
+  font-size: 15px;
+  position: relative;
+}
+
+.plans .plan-name {
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.plans .plan-btn {
+  background-color: #eb6213;
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+  height: 75px;
+  line-height: 75px;
+}
+
+.plans .recommended {
+  background-color: #26d4d4;
+  transition: 0, 5;
+}
+
+/* searchanime-container */
+.searchanime-container {
+  background-color: #26d4d4;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.searchanime-container h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.searchanime-container p {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.searchanime-container input {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.searchanime-container input[type='text'] {
+  width: 60%;
+  padding: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.searchanime-container input[type='submit'] {
+  padding: 15px 30px;
+  background-color: #eb8213;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.8s;
+}
+
+.searchanime-container input[type='submit']:hover {
+  background-color: #eee;
+  color: #eb8213;
+  border: 2px solid #eb8213;
+}
+
+/* contact-container */
+.contact-container {
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 0 auto 20px;
+  width: 460px;
+  height: 140px;
+}
+
+.contact-container input[type='submit'] {
+  background-color: #eb8213;
+  display: block;
+  margin: 0 auto;
+  color: #eee;
+  cursor: pointer;
+  opacity: 0.5s;
+}
+
+.contact-container input[type='submit']:hover {
+  background-color: #eee;
+  color: #eb8213;
+  border: 2px solid #eb8213;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin: 50px 0 90px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Responsividade */
+
+/* small laptop a partir de 1100px */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+
+  .plans {
+    margin: 0 5px;
+  }
+}
+
+/* tablet 900px*/
+@media (max-width: 900px) {
+  .main-banner p {
+    padding: 0 5rem;
+  }
+
+  .plans {
+    margin-left: 3rem;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 4rem;
+  }
+}
+
+/* Celular 576px */
+@media (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-banner p {
+    padding: 0 2rem;
+  }
+
+  .navbar-itens li {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .services-container ul {
+    flex-direction: column;
+  }
+
+  .plans-container {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 2rem;
+  }
+
+  .plans {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 15px 15px 15px;
+  }
+
+  .searchanime-container h2 {
+    font-size: 28px;
+  }
+
+  .searchanime-container input[type='text'] {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
